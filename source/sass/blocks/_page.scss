@@ -1,3 +1,7 @@
+@use "../_variables.scss";
+
 .page {
   font-family: "Open Sans", "Arial", sans-serif;
+  color: variables.$color-dark-second;
+  background-color: variables.$color-substrate-background;
 }

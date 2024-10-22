@@ -1,0 +1,8 @@
+@use "../_variables.scss";
+
+.header-wrapper {
+  background-image: url("../../img/backgrounds/back-desktop.jpg");
+  background-color: variables.$color-dark-background;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
