@@ -1,1 +1,5 @@
-// Начните писать стили здесь
+@use "variables";
+@use "utils";
+@use "fonts";
+@use "./blocks/page";
+@use "./blocks/page-header";
