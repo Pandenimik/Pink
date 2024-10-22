@@ -1,0 +1,9 @@
+@use "../_variables.scss";
+@use "../_mixins";
+
+.page-footer {
+  @include mixins.container;
+
+  padding: 40px 71px;
+  background-color: variables.$color-light-base;
+}

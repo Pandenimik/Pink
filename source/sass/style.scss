@@ -1,5 +1,7 @@
-@use "utils";
+@use "globals";
 @use "fonts";
+@use "media";
+@use "utils";
 @use "./blocks/burger-toggle";
 @use "./blocks/card";
 @use "./blocks/cards";
@@ -9,7 +11,6 @@
 @use "./blocks/contest";
 @use "./blocks/copyright";
 @use "./blocks/downloads";
-@use "./blocks/global";
 @use "./blocks/header-wrapper";
 @use "./blocks/info";
 @use "./blocks/intro";

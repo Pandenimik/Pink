@@ -1,0 +1,11 @@
+@use "../_variables.scss";
+@use "../_mixins";
+
+.contacts {
+  @include mixins.container;
+  background-color: variables.$color-light-base;
+
+  &__list {
+    @include mixins.reset-list;
+  }
+}

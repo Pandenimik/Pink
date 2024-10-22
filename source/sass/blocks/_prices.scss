@@ -1,0 +1,7 @@
+@use "../_variables.scss";
+@use "../_mixins";
+
+.prices {
+  @include mixins.container;
+  background-color: variables.$color-light-base;
+}

@@ -1,0 +1,18 @@
+@use "../variables";
+@use "../mixins";
+
+.downloads {
+  @include mixins.container;
+
+  color: variables.$color-light-base;
+  font-weight: 300;
+  background-color: variables.$color-dark-background;
+
+  &__button {
+    @include mixins.reset-link;
+  }
+
+  &__list {
+    @include mixins.reset-list;
+  }
+}

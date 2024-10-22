@@ -1,8 +1,12 @@
 @use "../_variables.scss";
 
 .header-wrapper {
+  min-height: 462px;
+  color: variables.$color-light-base;
   background-image: url("../../img/backgrounds/back-mobile.png");
   background-color: variables.$color-dark-background;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-attachment: local;
+  background-size: cover;
+  background-position: center;
 }

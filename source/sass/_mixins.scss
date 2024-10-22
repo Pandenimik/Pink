@@ -1,0 +1,41 @@
+@use "variables";
+
+@mixin container {
+  margin: 0 auto;
+  min-width: variables.$container-width;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@mixin reset-button {
+  padding: 0;
+
+  font: inherit;
+  background-color: transparent;
+  border: none;
+}
+
+@mixin reset-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+@mixin reset-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@mixin hover {
+  @media (hover: hover) {
+    &:hover {
+      @content;
+    }
+  }
+
+  @media (hover: none) {
+    &:active {
+      @content;
+    }
+  }
+}

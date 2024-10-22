@@ -1,0 +1,8 @@
+@use "../variables";
+@use "../mixins";
+
+.info {
+  @include mixins.container;
+
+  background-color: variables.$color-light-base;
+}

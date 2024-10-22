@@ -3,6 +3,4 @@
 
 .page-header {
   @include mixins.container;
-
-  color: variables.$color-light-base;
 }

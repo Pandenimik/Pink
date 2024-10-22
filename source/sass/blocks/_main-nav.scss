@@ -1,0 +1,15 @@
+@use "../_mixins";
+@use "../variables";
+
+.main-nav__list {
+  @include mixins.reset-list;
+}
+
+.main-nav__link {
+  @include mixins.reset-link;
+
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
