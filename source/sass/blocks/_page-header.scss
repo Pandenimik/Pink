@@ -1,8 +1,8 @@
 @use "../_variables.scss";
+@use "../_mixins";
 
 .page-header {
-  margin: 0 auto;
-  max-width: 1200px;
+  @include mixins.container;
 
   color: variables.$color-light-base;
 }

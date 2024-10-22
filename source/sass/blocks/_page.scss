@@ -4,4 +4,9 @@
   font-family: "Open Sans", "Arial", sans-serif;
   color: variables.$color-dark-second;
   background-color: variables.$color-substrate-background;
+
+  &__body {
+    margin: 0;
+  }
 }
+
