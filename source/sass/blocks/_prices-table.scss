@@ -1,0 +1,43 @@
+@use "../variables";
+
+.prices-table {
+  border-collapse: collapse;
+
+  &__header {
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    border: variables.$table-border;
+  }
+
+  &__rate {
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: variables.$color-light-base;
+    background-color: variables.$color-dark-second;
+    border-top: none;
+    border-right: variables.$table-border;
+    border-bottom: none;
+    border-left: variables.$table-border;
+  }
+
+  &__price {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: variables.$color-light-base;
+    background-color: variables.$color-dark-second;
+    border-top: none;
+    border-right: variables.$table-border;
+    border-bottom: none;
+    border-left: variables.$table-border;
+  }
+
+  &__option {
+    border: variables.$table-border;
+  }
+}

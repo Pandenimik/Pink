@@ -1,5 +1,22 @@
+@use "mixins";
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
+
+.basic-text {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.section-title-text {
+  font-size: 24px;
+  line-height: 120%;
+  font-weight: 300;
+  text-align: center;
+}
+

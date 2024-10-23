@@ -3,9 +3,58 @@
 
 .reviews {
   @include mixins.container;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  margin-top: -43px;
+  padding-top: 50px;
+  padding-bottom: 15px;
+
   background-color: variables.$color-light-base;
 
   &__list {
     @include mixins.reset-list;
+  }
+
+  &__item {
+    &:not(:first-of-type) {
+      display: none;
+    }
+  }
+
+  &__blockquote {
+    margin: 0;
+
+    text-align: center;
+  }
+
+  &__author-name {
+    display: block;
+    margin-bottom: 31px;
+
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  &__author-age {
+    display: none;
+  }
+
+  &__author-work {
+    display: none;
+  }
+
+  &__text {
+    margin-top: 0;
+    margin-bottom: 44px;
+
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 400;
   }
 }

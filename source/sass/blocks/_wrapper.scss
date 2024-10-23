@@ -1,0 +1,37 @@
+@use "../_variables.scss";
+
+.wrapper {
+  background-repeat: no-repeat;
+  background-attachment: local;
+  background-size: cover;
+  background-position: center;
+
+  &--header {
+    min-height: 462px;
+    color: variables.$color-light-base;
+    background-image: url("../../img/backgrounds/back-header-mobile.png");
+    background-color: variables.$color-dark-background;
+  }
+
+  &--top-menu {
+    background-color: rgba(variables.$color-dark-base, 0.3);
+  }
+
+  &--downloads {
+    background-color: variables.$color-dark-background;
+  }
+
+  &--info {
+    background-image: url("../../img/backgrounds/back-info-mobile.png");
+    background-color: variables.$color-light-base;
+    background-position: center bottom;
+    background-size: 100% 828px;
+  }
+
+  &--prices {
+    background-image: url("../../img/backgrounds/back-prices-mobile.png");
+    background-color: variables.$color-light-base;
+    background-position: center bottom;
+    background-size: 100% 450px;
+  }
+}

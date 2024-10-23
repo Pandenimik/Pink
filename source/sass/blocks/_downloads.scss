@@ -4,15 +4,41 @@
 .downloads {
   @include mixins.container;
 
+  padding-top: 28px;
+  padding-bottom: 38px;
+
   color: variables.$color-light-base;
   font-weight: 300;
-  background-color: variables.$color-dark-background;
 
   &__button {
     @include mixins.reset-link;
+
+    justify-content: center;
+    width: 100%;
+    padding: 18px;
+
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+    border: solid 3px variables.$color-light-base;
+    border-radius: 29px;
   }
 
   &__list {
     @include mixins.reset-list;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 38px 38px 31px;
+  }
+
+  &__text {
+    margin-top: 0;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
   }
 }

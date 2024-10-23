@@ -1,0 +1,9 @@
+@use "../_variables.scss";
+@use "../_mixins";
+
+.map {
+  @include mixins.container;
+
+  padding: 0;
+  background-color: variables.$color-light-base;
+}

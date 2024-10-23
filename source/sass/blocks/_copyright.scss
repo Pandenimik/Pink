@@ -1,0 +1,15 @@
+@use "../variables";
+@use "../mixins";
+
+.copyright {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  &__text {
+    margin: 0;
+
+    font-size: 14px;
+    line-height: 18px;
+  }
+}

@@ -4,6 +4,17 @@
 .page-footer {
   @include mixins.container;
 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 40px 71px;
   background-color: variables.$color-light-base;
+
+  &__logo {
+    margin-bottom: 41px;
+  }
+
+  &__socials {
+    margin-bottom: 41px;
+  }
 }

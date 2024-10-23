@@ -1,0 +1,19 @@
+@use "../_variables.scss";
+@use "../_mixins";
+
+.socials {
+  @include mixins.reset-list;
+
+  display: flex;
+  gap: 14px;
+
+  &__link {
+    @include mixins.reset-link;
+
+    width: 48px;
+    height: 48px;
+
+    outline: solid 3px rgba(variables.$color-dark-second, 0.1);
+    border-radius: 50%;
+  }
+}

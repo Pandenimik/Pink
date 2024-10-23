@@ -1,0 +1,30 @@
+@use "../mixins";
+@use "../variables";
+
+.slider {
+  &__toggles {
+    display: flex;
+    gap: 19px;
+  }
+
+  &__toggle {
+    @include mixins.reset-button;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: rgba(variables.$color-dark-second, 0.3);
+
+    &--current {
+      outline: solid 3px variables.$color-dark-second;
+      background-color: variables.$color-light-base;
+    }
+  }
+
+  &__prev {
+    display: none;
+  }
+
+  &__next {
+    display: none;
+  }
+}

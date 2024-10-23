@@ -3,9 +3,58 @@
 
 .contacts {
   @include mixins.container;
+
+  padding-top: 50px;
+  padding-bottom: 41px;
   background-color: variables.$color-light-base;
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 45px;
+  }
 
   &__list {
     @include mixins.reset-list;
+  }
+
+  &__item {
+    margin-bottom: 31px;
+
+    &:nth-child(2) {
+      margin-bottom: 35px;
+    }
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  &__item-title {
+    margin-top: 0;
+    margin-bottom: 13px;
+
+    font-size: 18px;
+    line-height: auto;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  &__item-link {
+    @include mixins.reset-link;
+
+    font-size: 24px;
+    line-height: auto;
+    font-weight: 300;
+    text-align: center;
+    color: variables.$color-accent-base;
+  }
+
+  &__address {
+    font-size: 24px;
+    line-height: auto;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+    color: variables.$color-accent-base;
   }
 }
