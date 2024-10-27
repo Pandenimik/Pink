@@ -1,0 +1,17 @@
+@use "../variables";
+@use "../mixins";
+
+.users-photo {
+  @include mixins.container;
+  padding-top: 54px;
+  padding-bottom: 24px;
+
+  background-color: variables.$color-light-base;
+
+  &__title {
+    margin-bottom: 60px;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+  }
+}

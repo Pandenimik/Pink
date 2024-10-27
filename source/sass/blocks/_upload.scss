@@ -1,0 +1,52 @@
+@use "../variables";
+@use "../mixins";
+
+.upload {
+  @include mixins.container;
+
+  padding: 25px 0 41px;
+  background-color: variables.$color-light-base;
+
+  &__title {
+    @include mixins.container;
+    margin: 0 0 52px;
+
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  &__container {
+    @include mixins.container;
+    padding-top: 20px;
+    padding-bottom: 41px;
+
+    background-color: variables.$color-light-background;
+  }
+
+  &__buttons-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  &__button {
+    @include mixins.reset-button;
+    min-height: 55px;
+
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+    color: variables.$color-accent-base;
+
+    border: solid 3px variables.$color-accent-base;
+    border-radius: 30px;
+    cursor: pointer;
+
+    &--cancel {
+      color: variables.$color-dark-second;
+      border-color: variables.$color-dark-second;
+      opacity: 0.1;
+    }
+  }
+}

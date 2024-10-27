@@ -1,0 +1,10 @@
+@use "../variables";
+@use "../mixins";
+
+.cards {
+  @include mixins.reset-list;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
