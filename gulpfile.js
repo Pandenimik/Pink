@@ -13,6 +13,7 @@ const styles = () => {
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(sass())
+    .on('error', handleErrors)
     .pipe(postcss([
       autoprefixer()
     ]))
@@ -49,3 +50,8 @@ const watcher = () => {
 exports.default = gulp.series(
   styles, server, watcher
 );
+
+function handleErrors(e) {
+  console.log(e);
+  this.emit("end");
+}

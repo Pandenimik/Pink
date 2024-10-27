@@ -11,36 +11,38 @@
 <body class="page__body">
   <h1 class="visually-hidden">Каталог фото пользователей</h1>
   <div class="wrapper wrapper--header">
-    <header class="page-header">
-      <a class="logo" href="index.html">
-        <img class="logo__img" width="74" height="23" src="" alt="Логотип 'Pink'">
-      </a>
-      <nav class="main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="index.html">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="">Фотографии</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">Конкурс</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="https://htmlacademy.ru/">Html Academy</a>
-          </li>
-        </ul>
-        <button class="toggle" type="button">
-          <span class="visually-hidden">
-            Открыть меню навигации
-          </span>
-        </button>
-      </nav>
-      <section class="intro">
-        <h2 class="visually-hidden">Вступительная часть страницы</h2>
-        <p class="intro__title section-title-text">Фотографии пользователей</p>
-      </section>
-    </header>
+    <div class="wrapper wrapper--top-menu">
+      <header class="page-header">
+        <a class="logo" href="index.html">
+          <img class="logo__img" width="74" height="23" src="./img/main-logo/header-logo-mobile.svg" alt="Логотип 'Pink'">
+        </a>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="">Фотографии</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Конкурс</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="https://htmlacademy.ru/">Html Academy</a>
+            </li>
+          </ul>
+          <button class="toggle" type="button">
+            <span class="visually-hidden">
+              Открыть меню навигации
+            </span>
+          </button>
+        </nav>
+      </header>
+    </div>
+    <section class="intro intro--catalog">
+      <h2 class="visually-hidden">Вступительная часть страницы</h2>
+      <p class="intro__title section-title-text">Фотографии пользователей</p>
+    </section>
   </div>
   <main class="page__main">
     <section class="users-photo">
@@ -153,10 +155,10 @@
     </section>
   </main>
   <footer class="page-footer">
-    <a class="logo" href="index.html">
-      <img class="logo__img" width="145" height="40" src="" alt="Логотип 'Pink'">
+    <a class="logo page-footer__logo" href="index.html">
+      <img class="logo__img" width="145" height="40" src="./img/main-logo/footer-logo-mobile.svg" alt="Логотип 'Pink'">
     </a>
-    <ul class="socials">
+    <ul class="page-footer__socials socials ">
       <li class="socials__item">
         <a class="socials__link socials__link--twitter" href="">
           <span class="visually-hidden">Twitter</span>
@@ -179,6 +181,7 @@
         <span class="visually-hidden">
           Переход на сайт разработчика
         </span>
+        <img class="copyright__img" src="./img/html-academy-logo.svg" alt="">
       </a>
     </div>
   </footer>

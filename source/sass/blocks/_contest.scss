@@ -1,0 +1,21 @@
+@use "../variables";
+@use "../mixins";
+
+.contest {
+  &__intro {
+    @include mixins.container;
+
+    padding-top: 54px;
+    padding-bottom: 11px;
+
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 400;
+    text-align: center;
+    background-color: variables.$color-light-base;
+  }
+
+  &__asterisk {
+    color: variables.$color-accent-base;
+  }
+}

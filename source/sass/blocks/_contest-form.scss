@@ -1,0 +1,101 @@
+@use "../variables";
+@use "../mixins";
+
+.contest-form {
+  @include mixins.container;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 26px;
+  background-color: variables.$color-light-base;
+
+  &__list {
+    @include mixins.reset-list;
+  }
+
+  &__item {
+    padding: 44px 22px 42px;
+
+    &:nth-child(even) {
+      background-color: variables.$color-light-background;
+    }
+  }
+
+  &__fieldset {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+
+    border: none;
+  }
+
+  &__legend {
+    margin: 0 auto;
+
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: variables.$color-accent-base;
+    text-align: center;
+  }
+
+  &__label {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  &__text-input-label {
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: variables.$color-accent-base;
+  }
+
+  &__input {
+    padding: 23px 20px;
+
+    font-family: inherit;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+
+    border: 2px solid variables.$color-substrate-background;
+
+    &::placeholder {
+      color: variables.$color-dark-second;
+      opacity: 1;
+    }
+  }
+
+  &__textarea {
+    margin: 0;
+    padding: 22px 20px;
+    resize: none;
+
+    font-family: inherit;
+    font-size: 18px;
+    line-height: 30px;
+    color: inherit;
+  }
+
+  &__bottom-container {
+    @include mixins.container;
+
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+
+  &__button {
+    margin-bottom: 46px;
+  }
+
+  &__note {
+    margin: 0;
+    font-size: 14px;
+    line-height: 30px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}

@@ -1,0 +1,16 @@
+@use "../variables";
+@use "../mixins";
+
+.form-button {
+  @include mixins.reset-button;
+
+  padding: 23px;
+  width: 100%;
+
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: variables.$color-light-base;
+  background-color: variables.$color-accent-second;
+  cursor: pointer;
+}

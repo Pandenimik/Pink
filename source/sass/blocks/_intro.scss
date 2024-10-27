@@ -5,6 +5,16 @@
   position: relative;
   padding-top: 29px;
 
+  &--form {
+    padding-top: 36px;
+    padding-bottom: 51px;
+  }
+
+  &--catalog {
+    padding-top: 36px;
+    padding-bottom: 84px;
+  }
+
   &__title {
     margin-top: 0;
     margin-bottom: 34px;
