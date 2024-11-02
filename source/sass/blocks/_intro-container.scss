@@ -1,0 +1,14 @@
+@use "../_mixins";
+@use "../variables";
+
+.intro-container {
+  @media (min-width: variables.$tablet-width) {
+    @include mixins.container;
+    position: relative;
+    padding-top: 102px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding-top: 114px;
+  }
+}

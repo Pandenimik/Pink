@@ -14,7 +14,11 @@
     <div class="wrapper wrapper--top-menu">
       <header class="page-header">
         <a class="logo" href="index.html">
-          <img class="logo__img" width="74" height="23" src="./img/main-logo/header-logo-mobile.svg" alt="Логотип 'Pink'">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="./img/main-logo/header-logo-desktop.svg" width="147" height="40">
+            <source media="(min-width: 660px)" srcset="./img/main-logo/header-logo-tablet.svg" width="145" height="40">
+            <img class="page-header__logo" width="74" height="23" src="./img/main-logo/header-logo-mobile.svg" alt="Логотип 'Pink'">
+          </picture>
         </a>
         <nav class="main-nav">
           <ul class="main-nav__list">
@@ -31,7 +35,7 @@
               <a class="main-nav__link" href="https://htmlacademy.ru/">Html Academy</a>
             </li>
           </ul>
-          <button class="toggle" type="button">
+          <button class="burger-toggle" type="button">
             <span class="visually-hidden">
               Открыть меню навигации
             </span>

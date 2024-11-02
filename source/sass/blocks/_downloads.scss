@@ -2,7 +2,9 @@
 @use "../mixins";
 
 .downloads {
-  @include mixins.container;
+  @media (max-width: 659px) {
+    @include mixins.container;
+  }
 
   padding-top: 28px;
   padding-bottom: 38px;
@@ -10,18 +12,39 @@
   color: variables.$color-light-base;
   font-weight: 300;
 
+  @media (min-width: variables.$tablet-width) {
+    width: 300px;
+    padding-bottom: 119px;
+    position: relative;
+    z-index: 1;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding-bottom: 130px;
+    position: relative;
+  }
+
   &__button {
     @include mixins.reset-link;
 
+    display: flex;
     justify-content: center;
+    align-items: center;
     width: 100%;
-    padding: 18px;
+    min-height: 55px;
+    padding: 14px;
 
     font-size: 18px;
     line-height: 18px;
     font-weight: 700;
+    text-align: center;
     border: solid 3px variables.$color-light-base;
     border-radius: 29px;
+
+    @media (min-width: variables.$desktop-width) {
+      font-size: 21px;
+      min-height: 56px;
+    }
   }
 
   &__list {
@@ -36,6 +59,14 @@
 
   &__text {
     margin-top: 0;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+    text-align: center;
+
+    @media (min-width: variables.$tablet-width) {
+      font-size: 18px;
+    }
 
     &:last-of-type {
       margin-bottom: 0;

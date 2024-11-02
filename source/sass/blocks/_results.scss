@@ -1,0 +1,46 @@
+@use "../_variables.scss";
+@use "../_mixins";
+
+.results {
+  @media (max-width: 659px) {
+    display: none;
+  }
+
+  @include mixins.container;
+  position: relative;
+  z-index: 1;
+  padding-top: 54px;
+  padding-bottom: 60px;
+  min-height: 390px;
+
+  background-color: variables.$color-light-base;
+
+  &__picture {
+    display: block;
+    float: left;
+    margin-right: 72px;
+  }
+
+  &__title {
+    margin-top: 48px;
+    margin-bottom: 24px;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    color: variables.$color-dark-base;
+  }
+
+  &__text {
+    margin-top: 0;
+    margin-bottom: 24px;
+
+    text-align: start;
+  }
+
+  &__link {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: variables.$color-accent-base;
+  }
+}

@@ -3,4 +3,20 @@
 
 .page-header {
   @include mixins.container;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 50px;
+  align-items: flex-end;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  position: relative;
+
+  &__logo {
+    display: block;
+  }
+
+  &--opened-nav {
+    background-color: variables.$color-dark-second;
+    box-shadow: 0 1px 0 0 variables.$color-dark-base;
+  }
 }

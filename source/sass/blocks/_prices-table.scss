@@ -2,6 +2,7 @@
 
 .prices-table {
   border-collapse: collapse;
+  background-color: variables.$color-light-base;
 
   &__header {
     font-size: 14px;

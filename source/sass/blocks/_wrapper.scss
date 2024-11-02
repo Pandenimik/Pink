@@ -1,15 +1,25 @@
 @use "../_variables.scss";
 
 .wrapper {
+  margin: 0 auto;
+  max-width: 1400px;
   background-repeat: no-repeat;
   background-attachment: local;
-  background-size: cover;
-  background-position: center;
+  background-size: 100%;
+  background-position: center top;
 
   &--header {
     color: variables.$color-light-base;
     background-image: url("../../img/backgrounds/back-header-mobile.png");
     background-color: variables.$color-dark-background;
+
+    @media (min-width: variables.$tablet-width) {
+      background-image: url("../../img/backgrounds//back-header-tablet.jpg");
+    }
+
+    @media (min-width: variables.$desktop-width) {
+      background-image: url("../../img/backgrounds/back-header-desktop.png");
+    }
   }
 
   &--top-menu {
@@ -18,19 +28,27 @@
 
   &--downloads {
     background-color: variables.$color-dark-background;
+
+    @media (min-width: variables.$tablet-width) {
+      background-color: transparent;
+    }
   }
 
   &--info {
-    background-image: url("../../img/backgrounds/back-info-mobile.png");
+    background-image: linear-gradient(174deg, variables.$color-light-base 250px, variables.$color-light-background 250px);
     background-color: variables.$color-light-base;
-    background-position: center bottom;
-    background-size: 100% 828px;
+  }
+
+  &--results {
+    background-color: variables.$color-light-base;
+  }
+
+  &--reviews {
+    background-color: variables.$color-light-base;
   }
 
   &--prices {
-    background-image: url("../../img/backgrounds/back-prices-mobile.png");
+    background-image: linear-gradient(176.5deg, variables.$color-light-base 10%, variables.$color-light-background 10%);
     background-color: variables.$color-light-base;
-    background-position: center bottom;
-    background-size: 100% 450px;
   }
 }

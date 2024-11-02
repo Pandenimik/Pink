@@ -1,9 +1,18 @@
+@use "../variables.scss";
 @use "../mixins";
 
 .intro {
-  @include mixins.container;
+  @media (max-width: 659px) {
+    @include mixins.container;
+  }
+
   position: relative;
-  padding-top: 29px;
+  padding-top: 18px;
+
+  @media (min-width: variables.$tablet-width) {
+    width: 300px;
+    position: static;
+  }
 
   &--form {
     padding-top: 36px;
@@ -18,12 +27,26 @@
   &__title {
     margin-top: 0;
     margin-bottom: 34px;
+
+    @media (min-width: variables.$tablet-width) {
+      margin-bottom: 39px;
+      padding: 0 30px;
+    }
   }
 
   &__img {
-    display: block;
-    position: relative;
-    left: -20px;
-    bottom: 0;
+    @media (max-width: 659px) {
+      display: block;
+      position: relative;
+      left: -20px;
+      bottom: 0;
+    }
+
+    @media (min-width: variables.$tablet-width) {
+      display: block;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
   }
 }

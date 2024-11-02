@@ -1,3 +1,4 @@
+@use "variables.scss";
 @use "mixins";
 
 *,
@@ -18,5 +19,13 @@
   line-height: 120%;
   font-weight: 300;
   text-align: center;
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 40px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    font-size: 50px;
+  }
 }
 
